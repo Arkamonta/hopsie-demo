@@ -18,7 +18,12 @@
 		}
 	}
 	.screen-reader-text {
-		display: none;
+		width: 1px;
+		height: 1px;
+		position: absolute;
+		top: auto;
+		left: -10000px;
+		overflow: hidden;
 	}
 	.site-header {
 		border-bottom: 2px solid $backdrop-color;

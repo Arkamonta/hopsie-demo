@@ -11,7 +11,12 @@ body a:hover {
   color: #14133B;
 }
 body .screen-reader-text {
-  display: none;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  top: auto;
+  left: -10000px;
+  overflow: hidden;
 }
 body .site-header {
   border-bottom: 2px solid #14133B;
