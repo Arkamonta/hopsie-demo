@@ -6,25 +6,31 @@
 
 get_header(); ?>
 
-<div class="content-wrap single-content" role="main">
+	<div class="jd-banner-page-header">
+		<div class="grid-container">
+			<div class="grid-x align-middle">
+				<h1><?php the_title(); ?></h1>
+				<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate>Posted On <?php the_time( 'F j, Y' ); ?></time>
+			</div>
+		</div>
+	</div>
 
-    <?php while ( have_posts() ) : the_post(); ?>
+	<div class="content-wrap single-content grid-container" role="main">
+		<div class="grid-x">
+			<div class="cell medium-8">
 
-    <article id="post-<?php the_ID(); ?>" <?php post_class( 'group' ); ?> role="article">
-        <header>
-            <h1><?php the_title(); ?></h1>
-            <time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_time( 'F j, Y' ); ?></time>
-        </header>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-        <?php the_content(); ?>
-    </article>
+				<article id="post-<?php the_ID(); ?>" <?php post_class( 'group' ); ?> role="article">
+					<?php the_content(); ?>
+				</article>
 
-    <?php comments_template( '', true ); ?>
+				<?php comments_template( '', true ); ?>
 
-    <?php endwhile; ?>
-
-</div><!-- end content -->
-
-<?php // get_sidebar(); ?>
+				<?php endwhile; ?>
+			</div>
+			<?php get_sidebar(); ?>
+		</div>
+	</div><!-- end content -->
 
 <?php get_footer(); ?>

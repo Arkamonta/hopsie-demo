@@ -5,14 +5,14 @@
  */
 ?>
 
-<footer class="site-footer" role="contentinfo">
-    <nav class="nav-footer-wrap" role="navigation">
+<footer class="site-footer grid-x" role="contentinfo">
+    <nav class="nav-footer-wrap cell small-6" role="navigation">
         <?php h5bs_footer_nav(); ?>
     </nav>
 
     <?php get_template_part( 'parts/icons', 'social' ); ?>
 
-    <p class="copyright">&copy; <?php echo date( 'Y' ); ?> <?php echo get_bloginfo( 'name' ); ?></p>
+    <p class="copyright cell small-12">&copy; <?php echo date( 'Y' ); ?> <?php echo get_bloginfo( 'name' ); ?></p>
 </footer>
 
 <?php wp_footer(); ?>

@@ -1,14 +1,14 @@
 <?php
 /**
- * Default Page Template
+ * Template Name: Home Page
  *
  */
 
 get_header(); ?>
 
-	<div class="jd-banner-page-header">
+	<div class="jd-banner-home-header">
 		<div class="grid-container">
-			<div class="grid-x align-middle">
+			<div class="grid-x align-center align-middle">
 				<h1><?php the_title(); ?></h1>
 			</div>
 		</div>
