@@ -41,3 +41,6 @@ assets/css/*
 # Compiled JS
 assets/js/*
 *.js.map
+
+# yarn lock
+yarn.lock
